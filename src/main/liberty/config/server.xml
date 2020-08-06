@@ -14,7 +14,7 @@
     <dataSource id="cargotracker" jndiName="jdbc/cargotracker">
         <jdbcDriver libraryRef="MySQLLib"/>
         <properties databaseName="cargotracker" serverName="mysql" portNumber="3306"
-                    user="cargotracker" password="password" serverTimezone="EST"/>
+                    user="cargotracker" password="cargotracker" serverTimezone="EST"/>
     </dataSource>
     <library id="MySQLLib">
         <file name="${server.config.dir}/lib/mysql-connector-java-8.0.17.jar"/>
