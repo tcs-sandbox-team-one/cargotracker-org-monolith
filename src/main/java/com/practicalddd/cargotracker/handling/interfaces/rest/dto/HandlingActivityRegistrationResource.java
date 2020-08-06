@@ -15,6 +15,7 @@ public class HandlingActivityRegistrationResource {
     public HandlingActivityRegistrationResource(String bookingId, String voyageNumber, String unLocode, String handlingType, LocalDate completionTime){
         this.setBookingId(bookingId);
         this.setVoyageNumber(voyageNumber);
+        this.setHandlingType(handlingType);
         this.setUnLocode(unLocode);
         this.setCompletionTime(completionTime);
     }

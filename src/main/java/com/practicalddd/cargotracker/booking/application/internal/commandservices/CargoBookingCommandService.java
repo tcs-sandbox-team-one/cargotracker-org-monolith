@@ -49,8 +49,6 @@ public class CargoBookingCommandService {
         CargoBookedEvent cargoBookedEvent = new CargoBookedEvent();
         cargoBookedEvent.setId(bookingId); //Set the content of the event
         cargoBookedEventControl.fire(cargoBookedEvent);
-
-
         return new BookingId(bookingId);
     }
 

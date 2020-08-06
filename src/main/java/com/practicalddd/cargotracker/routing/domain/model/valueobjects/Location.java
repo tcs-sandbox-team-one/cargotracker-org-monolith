@@ -1,5 +1,5 @@
 package com.practicalddd.cargotracker.routing.domain.model.valueobjects;
-
+//package name updated
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
 

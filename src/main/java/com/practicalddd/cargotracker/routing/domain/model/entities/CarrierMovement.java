@@ -1,9 +1,11 @@
 package com.practicalddd.cargotracker.routing.domain.model.entities;
 
 
+import javax.persistence.*;
+
+//package name corrected
 import com.practicalddd.cargotracker.handling.domain.model.valueobjects.Location;
 
-import javax.persistence.*;
 import java.util.Date;
 
 @Entity
@@ -21,6 +23,7 @@ public class CarrierMovement {
     private Date departureDate;
     @Embedded
     @AttributeOverride(name = "unLocCode", column = @Column(name = "arrival_location_id"))
+    //changes made, column mapping added
     private Location arrivalLocation;
     @Embedded
     @AttributeOverride(name = "unLocCode", column = @Column(name = "departure_location_id"))
